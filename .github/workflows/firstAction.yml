@@ -6,3 +6,7 @@ jobs:
         steps:
             - name: This is Step 1
               run: echo Creating a yml file manually
+            - name: This is Step 2
+              run: |
+                    echo Line 1
+                    echo Line 2
