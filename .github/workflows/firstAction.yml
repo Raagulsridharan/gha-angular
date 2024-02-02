@@ -12,6 +12,7 @@ jobs:
                     echo Line 2
     Second_Job:
         runs-on: ubuntu-latest
+        needs: First_Job
         steps:
             - name: This is Step 1 for second job
               run: echo this is second job step 1
