@@ -2,11 +2,11 @@ name: Deploy website
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - '.github/workflows/cacheAndNeeds.yml'
-
-
+ 
+ 
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -49,9 +49,9 @@ jobs:
         with:
           name: dist-files
           path: dist
-          # path: |
-          #   dist
-          #   package.json
+        #   path: |
+        #     dist
+        #     package.json
   deploy:
     needs: build
     runs-on: ubuntu-latest
